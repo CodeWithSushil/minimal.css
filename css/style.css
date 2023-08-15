@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&family=Ubuntu&display=swap");
+:root {
+    --fira: "Fira Code", monospace;
+    --poppins: "Poppins", sans-serif;
+    --ubuntu: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    font-size: 62.5% !important;
+    font-family: var(--poppins);
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    margin-top: 1rem!important;
+    margin-left: 1rem!important;
+    margin-right: 1rem!important;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem!important;
+    display: flex!important;
+    justify-content: space-between!important;
+    align-items: center!important;
+    position: sticky!important;
+    top: 0%!important;
+    left: 0%;
+    bottom: 0%;
+ /* flex-direction: ;
+    flex-wrap: ; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11),
+        0px 0px 20px rgba(0, 0, 0, 0.21);
+}
+.navbar .brand {
+    text-decoration: none;
+}
+
+.navbar .logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+nav-list #github {
+    font-size: 4rem;
+}
+
+#github {
+    width: 3rem;
+    height: 3rem;
+    background-color: #111111;
+}

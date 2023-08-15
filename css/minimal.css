@@ -422,9 +422,9 @@ h6 {
     --dark: rgb(40, 40, 40);
     --black: rgb(0, 0, 0);
     --light: rgb(255, 255, 255);
-    --primary: rgb(30, 100, 245);
+    --primary: rgb(60, 100, 235);
     --success: rgb(75, 200, 80);
-    --warning: rgb(255, 155, 0);
+    --warning: rgb(245, 160, 0);
     --danger: rgb(245, 65, 65);
     --info: rgb(0, 180, 200);
 }
@@ -628,6 +628,11 @@ h6 {
     border-color: inherit;
 }
 
+/* row styles */
+.row{
+    display: table-cell;
+}
+
 /* Container */
 .container {
     margin-left: 1rem;
@@ -639,4 +644,12 @@ h6 {
         margin: 0rem;
         padding: 0.25rem 0.5rem;
     }
+}
+
+/* Cards styles */
+.card{
+    width: inherit;
+    margin-left: 1rem!important;
+    margin-right: 1rem!important;
+    padding: 0.75rem 1rem!important;
 }

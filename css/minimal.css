@@ -365,7 +365,8 @@ template {
 }
 
 html {
-    font-size: 100%;
+    font-size: 100%; /* 100% = 1em = 16px */
+    -webkit-font-size: 100%!important;
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -373,6 +374,15 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+/* font calc
+** 16px = 1rem
+14px = 0.87rem
+12px = 0.75rem
+8px = 0.50rem 
+4px = 0.25rem
+2px = 0.12rem
+*/
 
 body {
     margin: 0%;
@@ -386,8 +396,11 @@ html {
     -moz-scroll-behavior: smooth;
 }
 
-html{
-    box-sizing: border-box!important;
+html {
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
 }
 
 html,
@@ -396,13 +409,18 @@ body {
     height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0rem;
 }
 
 :root {
     --dark: rgb(40, 40, 40);
-    --black: rgb(0,0,0);
+    --black: rgb(0, 0, 0);
     --light: rgb(255, 255, 255);
     --primary: rgb(30, 100, 245);
     --success: rgb(75, 200, 80);
@@ -446,19 +464,19 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* background Colors */
-.bg-primary{
+.bg-primary {
     background-color: var(--primary);
 }
-.bg-success{
+.bg-success {
     background-color: var(--success);
 }
-.bg-warning{
+.bg-warning {
     background-color: var(--warning);
 }
-.bg-danger{
+.bg-danger {
     background-color: var(--danger);
 }
-.bg-info{
+.bg-info {
     background-color: var(--info);
 }
 
@@ -581,22 +599,44 @@ h1,h2,h3,h4,h5,h6{
 .lowercase {
     text-transform: lowercase;
 }
-.capitalize{
+.capitalize {
     text-transform: capitalize;
 }
-.txt-center{
+.txt-center {
     text-align: center;
+}
+.txt-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.txt-justify {
+    text-align: justify;
+}
+.center {
+    margin: 0rem auto;
+}
+
+/*Border styles*/
+.border-none {
+    border: none;
+}
+.border-solid-2{
+    border-width: 0.12rem;
+    border-style: solid;
+    border-color: inherit;
 }
 
 /* Container */
 .container {
     margin-left: 1rem;
     margin-right: 1rem;
-    padding: 0.01rem 1rem;
+    padding: 0.12rem 1rem;
 }
-@media (max-width: 480px){
-    .container{
+@media (max-width: 480px) {
+    .container {
         margin: 0rem;
-        padding: 0.25rem 0.50rem;
+        padding: 0.25rem 0.5rem;
     }
 }

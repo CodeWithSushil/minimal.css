@@ -327,7 +327,7 @@ h6 {
 .margin-x {
     margin: 0rem 1rem !important;
 }
-.m-auto {
+.margin-auto {
     margin: auto !important;
 }
 
@@ -535,6 +535,11 @@ button,
     background-color: var(--light) !important;
     border-color: var(--danger) !important;
 }
+.btn-danger-none{
+    color: var(--danger)!important;
+    border-color: var(--danger)!important;
+}
+
 .btn-success {
     text-align: center !important;
     color: var(--light) !important;

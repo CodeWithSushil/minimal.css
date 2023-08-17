@@ -366,7 +366,7 @@ template {
 
 html {
     font-size: 100%; /* 100% = 1em = 16px */
-    -webkit-font-size: 100%!important;
+    -webkit-font-size: 100% !important;
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -622,22 +622,124 @@ h6 {
 .border-none {
     border: none;
 }
-.border-solid-2{
+.border-solid-2 {
     border-width: 0.12rem;
     border-style: solid;
     border-color: inherit;
 }
 
-/* row styles */
-.row{
-    display: table-cell;
+/* Flex Box styles */
+.flex {
+    display: flex!important;
+    display: -webkit-flex!important;
 }
+.column {
+    flex-direction: column !important;
+}
+.column-reverse {
+    flex-direction: column-reverse !important;
+}
+.row {
+    flex-direction: row !important;
+}
+.d-row-reverse {
+    flex-direction: row-reverse !important;
+}
+.wrap {
+    flex-wrap: wrap !important;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+}
+.wrap-no {
+    flex-wrap: nowrap !important;
+}
+.items-center {
+    align-items: center !important;
+}
+.items-baseline {
+    align-items: baseline !important;
+}
+.items-start {
+    align-items: flex-start !important;
+}
+.items-end {
+    align-items: flex-end !important;
+}
+.items-normal {
+    align-items: normal !important;
+}
+.items-stretch {
+    align-items: stretch !important;
+}
+.content-stretch {
+    align-content: stretch !important;
+}
+.content-center {
+    align-content: center !important;
+}
+.content-start {
+    align-content: flex-start !important;
+}
+.content-end {
+    align-content: flex-end !important;
+}
+.content-starts {
+    align-content: start !important;
+}
+.content-ends {
+    align-content: end !important;
+}
+.content-between {
+    align-content: space-between !important;
+}
+.content-around {
+    align-content: space-around !important;
+}
+.content-evenly {
+    align-content: space-evenly !important;
+}
+.justify-center {
+    justify-content: center !important;
+}
+.justify-start {
+    justify-content: flex-start !important;
+}
+.justify-end {
+    justify-content: flex-end !important;
+}
+.justify-between {
+    justify-content: space-between !important;
+}
+.justify-around {
+    justify-content: space-around !important;
+}
+.justify-evenly {
+    justify-content: space-evenly !important;
+}
+/* Flexbox items styles */
+.self-start {
+    align-self: flex-start !important;
+}
+.self-end {
+    align-self: flex-end !important;
+}
+.self-baseline {
+    align-self: baseline !important;
+}
+.self-auto {
+    align-self: auto !important;
+}
+.self-stretch {
+    align-self: stretch !important;
+}
+/*
 
-/* Container */
 .container {
     margin-left: 1rem;
     margin-right: 1rem;
-    padding: 0.12rem 1rem;
+    padding-top: 0.01rem;
+    padding-bottom: 0.01rem;
 }
 @media (max-width: 480px) {
     .container {
@@ -645,11 +747,62 @@ h6 {
         padding: 0.25rem 0.5rem;
     }
 }
-
+*/
 /* Cards styles */
-.card{
-    width: inherit;
-    margin-left: 1rem!important;
-    margin-right: 1rem!important;
-    padding: 0.75rem 1rem!important;
+/*
+.card {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    padding: 0.75rem 1rem !important;
 }
+
+/*** Responsive Design with grid view ***/
+/* Design for mobiles */
+/*
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.rows::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+*/

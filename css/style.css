@@ -60,3 +60,7 @@ nav-list #github {
     border: 2px solid #FFF;
     padding: 4px;
 }
+footer,p,i{
+font-family:var(--ubuntu);
+font-size: 15px!important;
+}

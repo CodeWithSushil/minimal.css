@@ -358,10 +358,12 @@ template {
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    -ms-box-sizing: inherit;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
 }
 
 html {
@@ -377,17 +379,10 @@ html {
 
 /* font calc
 ** 16px = 1rem
-14px = 0.87rem
 12px = 0.75rem
 8px = 0.50rem 
 4px = 0.25rem
-2px = 0.12rem
 */
-
-body {
-    margin: 0%;
-    padding: 0%;
-}
 
 html {
     scroll-behavior: smooth;
@@ -405,8 +400,8 @@ html {
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1,
@@ -417,13 +412,18 @@ h5,
 h6 {
     margin: 0rem;
 }
+a,
+span,
+img {
+    display: block !important;
+}
 
 :root {
-    --dark: rgb(40, 40, 40);
+    --dark: rgb(42, 42, 45);
     --black: rgb(0, 0, 0);
     --light: rgb(255, 255, 255);
     --primary: rgb(60, 100, 235);
-    --success: rgb(75, 200, 80);
+    --success: #19aa00;
     --warning: rgb(245, 160, 0);
     --danger: rgb(245, 65, 65);
     --info: rgb(0, 180, 200);
@@ -628,10 +628,51 @@ h6 {
     border-color: inherit;
 }
 
+.btn,
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+    font-size: 15px !important;
+    display: block !important;
+    margin: 0.125rem !important;
+    padding: 0.35rem 1rem !important;
+    outline: none !important;
+    border-radius: 0.25rem !important;
+    border-style: solid !important;
+    border-width: 0.125rem !important;
+    text-decoration: none !important;
+}
+
+.btn-danger {
+    text-align: center !important;
+    color: var(--light) !important;
+    background-color: var(--danger) !important;
+    border-color: var(--danger);
+}
+.btn-danger:hover,
+.btn-danger:focus {
+    color: var(--danger) !important;
+    background-color: var(--light) !important;
+    border-color: var(--danger) !important;
+}
+.btn-success {
+    text-align: center !important;
+    color: var(--light) !important;
+    background-color: var(--success) !important;
+    border-color: var(--light);
+}
+.btn-success:hover,
+.btn-success:focus {
+    color: var(--success) !important;
+    background-color: var(--light) !important;
+    border-color: var(--success) !important;
+}
+
 /* Flex Box styles */
 .flex {
-    display: flex!important;
-    display: -webkit-flex!important;
+    display: flex !important;
+    display: -webkit-flex !important;
 }
 .column {
     flex-direction: column !important;

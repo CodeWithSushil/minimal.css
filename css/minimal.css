@@ -246,7 +246,7 @@ h6 {
     --success: #19aa00;
     --warning: rgb(245, 160, 0);
     --danger: rgb(245, 65, 65);
-    --info: rgb(0, 180, 200);
+    --info: rgb(100, 180, 180);
 }
 
 /* Theme Color */
@@ -254,7 +254,7 @@ h6 {
     color: var(--light);
     background-color: var(--dark);
 }
-# .bg-light {
+.bg-light {
     color: var(--dark);
     background-color: var(--light);
 }
@@ -297,6 +297,9 @@ h6 {
 }
 .bg-info {
     background-color: var(--info);
+}
+.bg-transparent {
+    background: transparent !important;
 }
 
 /* Margin */
@@ -371,7 +374,16 @@ h6 {
 .padding-x {
     padding: 0rem 1rem !important;
 }
-
+.padding-32 {
+    padding: 2rem 0rem !important;
+}
+/*Font style */
+.font-roman{
+    font-family: 'Times New Roman',Serif!important;
+}
+.font-mono{
+    font-family: Monospace!important;
+}
 /* Position */
 .absolute {
     position: absolute !important;
@@ -399,70 +411,85 @@ h6 {
 
 /* Display */
 .block {
-    display: block;
+    display: block !important;
 }
 
 .inline {
-    display: inline;
+    display: inline !important;
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 /* List style */
 .list-none {
-    list-style: none;
+    list-style: none !important;
 }
 
 .list-disc {
-    list-style-type: disc;
+    list-style-type: disc !important;
 }
 
 .list-square {
-    list-style-type: square;
+    list-style-type: square !important;
 }
-
 .list-circle {
-    list-style-type: circle;
+    list-style-type: circle !important;
 }
-
 .list-in {
-    list-style-position: inside;
+    list-style-position: inside !important;
 }
-
 .list-out {
-    list-style-position: outside;
+    list-style-position: outside !important;
+}
+.list-roman {
+    list-style-type: upper-roman !important;
+}
+.list-roman-l {
+    list-style-type: lower-roman !important;
+}
+.list-alpha {
+    list-style-type: upper-alpha !important;
+}
+.list-alpha-l {
+    list-style-type: lower-alpha !important;
+}
+.list-number-0 {
+    list-style-type: decimal-leading-zero !important;
+}
+.list-number {
+    list-style-type: decimal !important;
 }
 
 /* Text styles */
 .uppercase {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 .lowercase {
-    text-transform: lowercase;
+    text-transform: lowercase !important;
 }
 .capitalize {
-    text-transform: capitalize;
+    text-transform: capitalize !important;
 }
 .txt-center {
-    text-align: center;
+    text-align: center !important;
 }
 .txt-left {
-    text-align: left;
+    text-align: left !important;
 }
 .text-right {
-    text-align: right;
+    text-align: right !important;
 }
 .txt-justify {
-    text-align: justify;
+    text-align: justify !important;
 }
 .center {
-    margin: 0rem auto;
+    margin: 0rem auto !important;
 }
 .font {
     font-size: 16px !important;
@@ -473,6 +500,7 @@ h6 {
     width: 100% !important;
     height: auto !important;
     border: none !important;
+    outline: none !important;
     border-radius: 0% !important;
 }
 
@@ -491,19 +519,21 @@ h6 {
     border-style: solid !important;
 }
 
+/* Table style */
 .table,
 table {
-    width: 100%;
-    display: table;
-    border-collapse: collapse;
-    border-spacing: 0;
+    width: 100% !important;
+    display: table !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    overflow-x: auto !important;
 }
 tr,
 th,
 td {
-    border-width: 1px;
-    border-style: solid;
-    text-align: left;
+    border-width: 1px !important;
+    border-style: solid !important;
+    text-align: left !important;
 }
 
 /* Buttons styles*/
@@ -535,9 +565,9 @@ button,
     background-color: var(--light) !important;
     border-color: var(--danger) !important;
 }
-.btn-danger-none{
-    color: var(--danger)!important;
-    border-color: var(--danger)!important;
+.btn-danger-none {
+    color: var(--danger) !important;
+    border-color: var(--danger) !important;
 }
 
 .btn-success {

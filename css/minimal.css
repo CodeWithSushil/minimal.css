@@ -551,6 +551,7 @@ button,
     border-style: solid !important;
     border-width: 0.125rem !important;
     text-decoration: none !important;
+    cursor: pointer;
 }
 
 .btn-danger {

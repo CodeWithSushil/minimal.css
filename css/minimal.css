@@ -690,6 +690,11 @@ button,
     align-self: stretch !important;
 }
 
+.gap{
+  display: flex!important;
+  gap: 0.75rem!important;
+}
+
 /* Grid View */
 .row::after,
 .row::before {

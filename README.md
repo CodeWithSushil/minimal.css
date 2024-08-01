@@ -2,19 +2,19 @@
 
 * How to setup
 
-```CSS
-<meta rel="stylesheet" href="https://codewithsushil.github.io/minimal.css/css/minimal.css" />
+```html
+<link rel="stylesheet" href="https://codewithsushil.github.io/minimal.css/dist/minimal.css" />
 ```
 * or download minimal.css file
 
-```HTML
-<meta rel="stylesheet" href="./path/minimal.css">
+```html
+<link rel="stylesheet" href="./path/minimal.css">
 ```
 
 ### Example
 
 * this text are center and text color is red.
 
-```HTML
+```html
 <h2 class="txt-center txt-danger">Minimal CSS</h2>
 ```

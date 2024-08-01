@@ -3,12 +3,12 @@
 * How to setup
 
 ```html
-<meta rel="stylesheet" href="https://codewithsushil.github.io/minimal.css/dist/minimal.css" />
+<link rel="stylesheet" href="https://codewithsushil.github.io/minimal.css/css/minimal.css" />
 ```
 * or download minimal.css file
 
 ```html
-<meta rel="stylesheet" href="./path/minimal.css">
+<link rel="stylesheet" href="./path/minimal.css">
 ```
 
 ### Example

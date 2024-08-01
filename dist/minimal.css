@@ -313,6 +313,47 @@ template {
   display: none;
 }
 
+/* Position */
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky !important;
+}
+
+.sticky-top {
+  top: 0% !important;
+  position: sticky !important;
+}
+
+.sticky-bottom {
+  bottom: 0% !important;
+  position: sticky !important;
+}
+
+.sticky-left {
+  position: sticky !important;
+  left: 0% !important;
+}
+
+.sticky-right {
+  position: sticky !important;
+  right: 0% !important;
+}
+
 /* Flexboc rules */
 .flex {
   display: flex;

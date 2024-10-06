@@ -417,3 +417,30 @@ iframe {
   border-style: none;
 }
 
+.flex{
+display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-space-around{
+  justify-content: space-around;
+}
+
+.justify-space-between{
+  justify-content: space-between;
+}
+
+.justify-space-evenly{
+  justify-content: space-evenly;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.flex-end{
+  justify-content: flex-end;
+}

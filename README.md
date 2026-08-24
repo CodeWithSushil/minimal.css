@@ -1,3 +1,1 @@
-![minimal.css](images/android-chrome-512x512.png)
-## minimal.css
-Minimal.css: Never leave your HTML files.
+<img src="art/android-chrome-512x512.png" alt="Minimal" width="100%" height="auto">
